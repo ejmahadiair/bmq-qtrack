@@ -1,0 +1,93 @@
+@import "tailwindcss";
+
+.ant-table-cell {
+  padding: 10px !important;
+  color: gray !important;
+  font-size: 14px !important;
+  border: 1px solid rgb(240, 239, 239) !important;
+}
+.ant-table-pagination{
+    margin: 0 !important;
+    padding: 5px 0 !important;
+    background-color: #FAFAFA !important;
+}
+/* .ant-popconfirm-message-icon {
+  display: none !important;
+} */
+.ant-upload-select{
+  display: block !important;
+}
+
+::-webkit-scrollbar {
+  width: 10px; /* Scrollbar width */
+  
+}
+
+::-webkit-scrollbar-track {
+  background: #EDF9FD; /* Fallback color for scrollbar track */
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #C3EBFA, #CFCEFF, #FAE27C, #9BE3F2, #719E33);
+  border-radius: 5px; /* Rounded corners */
+  background-size: 200% 200%; /* Make the gradient large for clear color transitions */
+  animation: vibrantColorFlow 4s infinite linear; /* Continuous, vibrant color flow */
+  animation: vibrantColorFlowHover 4s infinite linear; /* Continuous, vibrant color flow */
+ 
+}
+
+/* Define a smooth and vibrant animation */
+@keyframes vibrantColorFlow {
+  0% {
+    background-position: 0% 0%;
+    background: linear-gradient(180deg, #9BE3F2,  #CFCEFF, #FAE27C, #C3EBFA,  #719E33) !important;
+  }
+  50% {
+    background-position: 0% 100%; /* Midway point: colors cycle from top to bottom */
+    background: linear-gradient(180deg, #719E33, #9BE3F2,  #CFCEFF,  #C3EBFA,   #FAE27C,) !important;
+  }
+  100% {
+    background-position: 0% 0%; /* Loop restarts */
+    background: linear-gradient(180deg, #719E33,  #CFCEFF,  #C3EBFA,   #FAE27C, #9BE3F2,) !important;
+  }
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #FAE27C, #CFCEFF, #C3EBFA, #9BE3F2, #719E33);
+  background-size: 200% 200%;
+  animation: vibrantColorFlowHover 3s infinite linear;
+}
+
+@keyframes vibrantColorFlowHover {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 0% 100%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+
+/* Firefox specific scrollbar styling */
+.scrollbar {
+  scrollbar-width: thin; /* Set scrollbar width */
+  scrollbar-color: #C3EBFA #EDF9FD; /* Thumb color and track color */
+  direction: rtl;
+}
+
+.scrollbar:hover {
+  scrollbar-color: #FAE27C #CFCEFF; /* Colors change on hover */
+}
+
+/* Fallback for browsers that don't support custom scrollbars */
+.scrollbar-track {
+  background-color: #EDF9FD;
+}
+
+.scrollbar-thumb {
+  background-color: #C3EBFA;
+  border-radius: 5px;
+}
+
